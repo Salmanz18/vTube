@@ -43,7 +43,7 @@ class App extends React.Component {
                                 onVideoSelect={this.onVideoSelect}
                                 videos={this.state.videos}
                             />
-                            <div className="ui inverted vertical footer segment">
+                            <div className="ui inverted vertical footer copyright">
                                 <div className="ui container footer-text justify-center-align">
                                     Copyright @ Salman Zafar. All Rights Reserved.
                                 </div>
