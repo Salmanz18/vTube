@@ -1,3 +1,7 @@
+div.ui.container.main-container {
+    max-width: 880px !important;
+}
+
 .search-bar {
     margin-top: 20px;
 }
@@ -9,6 +13,7 @@
 .video-list {
     margin-left: 20px;
     margin-right: 20px;
+    max-width: 880px !important;
 }
 
 .video-detail {

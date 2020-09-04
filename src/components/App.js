@@ -31,27 +31,29 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className=" ui container search-bar">
-                <SearchBar onFormSubmit={this.onTermSubmit} />
-                <div className="ui grid video-grid">
-                    <div className="ui row">
-                        <div className="video-detail">
-                            <VideoDetail video={this.state.selectedVideo} />
-                        </div>
-                        <div className="video-list">
-                            <VideoList
-                                onVideoSelect={this.onVideoSelect}
-                                videos={this.state.videos}
-                            />
-                            <div className="ui inverted vertical footer copyright">
-                                <div className="ui container footer-text justify-center-align">
-                                    Copyright @ Salman Zafar. All Rights Reserved.
-                                </div>
-                            </div>
-                        </div>
+          <div className='ui container main-container'>
+            <div className='ui container search-bar'>
+              <SearchBar onFormSubmit={this.onTermSubmit} />
+              <div className='ui grid video-grid'>
+                <div className='ui row'>
+                  <div className='video-detail'>
+                    <VideoDetail video={this.state.selectedVideo} />
+                  </div>
+                  <div className='video-list'>
+                    <VideoList
+                      onVideoSelect={this.onVideoSelect}
+                      videos={this.state.videos}
+                    />
+                    <div className='ui inverted vertical footer copyright'>
+                      <div className='ui container footer-text justify-center-align'>
+                        Copyright @ Salman Zafar. All Rights Reserved.
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         );
     }
 }
